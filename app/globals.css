@@ -1,0 +1,334 @@
+@import "tailwindcss";
+
+/* ================= RESET ================= */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ================= PREMIUM INDUSTRIAL BACKGROUND ================= */
+
+.gradient-bg {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(37, 99, 235, 0.55) 0%,
+      transparent 38%
+    ),
+
+    radial-gradient(
+      circle at 85% 75%,
+      rgba(220, 38, 38, 0.50) 0%,
+      transparent 38%
+    ),
+
+    linear-gradient(
+      135deg,
+      #020617 0%,
+      #081b44 28%,
+      #111827 52%,
+      #3b0a16 78%,
+      #450a0a 100%
+    );
+
+  background-size: 450% 450%;
+  animation: premiumGradient 10s ease infinite;
+}
+
+/* ================= MOVING LIGHTS ================= */
+
+.gradient-bg::before,
+.gradient-bg::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 9999px;
+}
+
+/* ================= BLUE LIGHT ================= */
+
+.gradient-bg::before {
+  width: 1000px;
+  height: 1000px;
+
+  top: -320px;
+  left: -220px;
+
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.30),
+    transparent 65%
+  );
+
+  filter: blur(120px);
+
+  animation: floatBlue 12s ease-in-out infinite;
+}
+
+/* ================= RED LIGHT ================= */
+
+.gradient-bg::after {
+  width: 950px;
+  height: 950px;
+
+  bottom: -320px;
+  right: -220px;
+
+  background: radial-gradient(
+    circle,
+    rgba(239, 68, 68, 0.28),
+    transparent 65%
+  );
+
+  filter: blur(120px);
+
+  animation: floatRed 14s ease-in-out infinite;
+}
+
+/* ================= KEEP CONTENT ABOVE BACKGROUND ================= */
+
+.gradient-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= MAIN GRADIENT ANIMATION ================= */
+
+@keyframes premiumGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 40% 60%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 60% 40%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ================= BLUE FLOAT ================= */
+
+@keyframes floatBlue {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  25% {
+    transform: translate(120px, 80px) scale(1.08);
+  }
+
+  50% {
+    transform: translate(220px, 140px) scale(1.12);
+  }
+
+  75% {
+    transform: translate(100px, 60px) scale(1.05);
+  }
+
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+/* ================= RED FLOAT ================= */
+
+@keyframes floatRed {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  25% {
+    transform: translate(-100px, -70px) scale(1.06);
+  }
+
+  50% {
+    transform: translate(-220px, -140px) scale(1.12);
+  }
+
+  75% {
+    transform: translate(-120px, -60px) scale(1.04);
+  }
+
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+/* ================= FLOAT UTILITY CLASSES ================= */
+
+.animate-floatBlue {
+  animation: floatBlue 12s ease-in-out infinite;
+}
+
+.animate-floatRed {
+  animation: floatRed 14s ease-in-out infinite;
+}
+
+/* ================= DIVIDER GLOW ================= */
+
+@keyframes slideGlow {
+  0% {
+    transform: translateX(-250%);
+  }
+
+  100% {
+    transform: translateX(350%);
+  }
+}
+
+.animate-divider {
+  animation: slideGlow 4s linear infinite;
+}
+
+/* ================= EXTRA SMOOTH GRADIENT ================= */
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 60%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 60% 40%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 450% 450%;
+  animation: gradientShift 10s ease infinite;
+}
+
+/* ================= MOBILE SAFETY ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Prevent images from overflowing */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Better text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Smooth tap highlight removal on mobile */
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent weird mobile zoom on inputs */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* ================= RESPONSIVE FIXES ================= */
+
+@media (max-width: 768px) {
+
+  /* Reduce gigantic blur load on phones */
+  .gradient-bg::before,
+  .gradient-bg::after {
+    filter: blur(70px);
+  }
+
+  /* Reduce animation strain */
+  .animate-gradient {
+    animation-duration: 16s;
+  }
+
+}
+
+/* ================= NAVBAR RESPONSIVE ================= */
+
+.desktop-nav {
+  display: none;
+}
+
+.mobile-hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 99999;
+  min-width: 52px;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-hamburger div {
+  width: 32px;
+  height: 3px;
+  background: black;
+  border-radius: 4px;
+  display: block;
+}
+
+.mobile-menu-panel {
+  display: block;
+}
+
+@media (min-width: 1400px) {
+  .desktop-nav {
+    display: flex;
+  }
+  .mobile-hamburger {
+    display: none !important;
+  }
+  .mobile-menu-panel {
+    display: none !important;
+  }
+}
+
+/* ================= MOBILE HERO GAP REDUCTION ================= */
+
+@media (max-width: 1399px) {
+  .hero-section {
+    padding-top: 60px !important;
+    padding-bottom: 8px !important;
+  }
+}
