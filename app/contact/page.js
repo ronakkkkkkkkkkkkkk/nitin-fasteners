@@ -406,15 +406,15 @@ export default function ContactPage() {
           "
         >
 
-          <iframe
-            src="https://www.google.com/maps?q=SHOP%20NO.8,%20FIRST%20FLOOR,%20NP.20/6,%20SALAM%20COMPLEX,%20M.R.R.LANE,%20S.J.P.%20ROAD%20CROSS,%20BANGALORE%20-%20560002&output=embed"
-            width="100%"
-            height={isMobile ? "350" : "720"}
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+<iframe
+  src="src="https://maps.google.com/maps?q=SALAM+COMPLEX+SJP+ROAD+CROSS+BANGALORE+560002&z=17&output=embed"
+  width="100%"
+  height={isMobile ? "350" : "720"}
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
 
           <div className="p-6 md:p-12 text-center">
 
