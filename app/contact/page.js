@@ -407,10 +407,10 @@ export default function ContactPage() {
         >
 
 <iframe
-  src="src="https://maps.google.com/maps?q=SALAM+COMPLEX+SJP+ROAD+CROSS+BANGALORE+560002&z=17&output=embed"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.109088605558!2d77.57664117383511!3d12.96487078734985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e2792f5f47%3A0x626de5e92fb24e35!2sNitin%20Fasteners!5e0!3m2!1sen!2sin!4v1778945411284!5m2!1sen!2sin"
   width="100%"
   height={isMobile ? "350" : "720"}
-  style={{ border: 0 }}
+  style={{ border: "0" }}
   allowFullScreen
   loading="lazy"
   referrerPolicy="no-referrer-when-downgrade"
