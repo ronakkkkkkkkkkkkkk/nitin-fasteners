@@ -173,7 +173,7 @@ export default function Navbar() {
           className="mobile-hamburger lg:hidden"
           style={{
             flexDirection: "column",
-            gap: "5px",
+            gap: "10px",
             padding: "10px",
             background: "transparent",
             border: "none",
