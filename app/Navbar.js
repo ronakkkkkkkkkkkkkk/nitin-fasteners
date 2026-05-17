@@ -13,7 +13,7 @@ export default function Navbar() {
           max-w-[1800px]
           mx-auto
           px-3 sm:px-4 md:px-10
-          py-4 md:py-3
+          py-3 md:py-2
           flex
           items-center
           justify-between
@@ -28,7 +28,7 @@ export default function Navbar() {
             className="
               w-[60px]
               sm:w-[70px]
-              md:w-[170px]
+              md:w-[136px]
               h-auto
               object-contain
             "
@@ -39,7 +39,7 @@ export default function Navbar() {
               className="
                 text-[18px]
                 sm:text-[20px]
-                md:text-[43px]
+                md:text-[34px]
                 font-extrabold
                 leading-none
                 whitespace-nowrap
@@ -54,7 +54,7 @@ export default function Navbar() {
                 text-gray-500
                 text-[7px]
                 sm:text-[8px]
-                md:text-sm
+                md:text-xs
                 font-semibold
                 tracking-wide
                 mt-[2px]
@@ -69,10 +69,10 @@ export default function Navbar() {
         <nav
           className="
             hidden
-            lg:flex
+            xl:flex
             items-center
-            gap-10
-            text-[35px]
+            gap-8
+            text-[28px]
             font-bold
             text-black
             shrink-0
@@ -113,7 +113,7 @@ export default function Navbar() {
                   top-full
                   left-0
                   mt-3
-                  w-72
+                  w-56
                   bg-white
                   rounded-2xl
                   shadow-[0_20px_60px_rgba(0,0,0,0.25)]
@@ -137,9 +137,9 @@ export default function Navbar() {
                     href={link}
                     className="
                       block
-                      px-6
-                      py-4
-                      text-lg
+                      px-5
+                      py-3
+                      text-base
                       hover:bg-gray-100
                       transition
                     "
@@ -168,23 +168,46 @@ export default function Navbar() {
 
         {/* MOBILE HAMBURGER */}
         <button
-  type="button"
-  onClick={() => setMenuOpen(!menuOpen)}
-  className="mobile-hamburger"
-  style={{
-    flexDirection: "column",
-    gap: "5px",
-    padding: "10px",
-    background: "transparent",
-    border: "none",
-    cursor: "pointer",
-    zIndex: 99999,
-  }}
->
-  <div style={{ width: "28px", height: "3px", background: "black", borderRadius: "4px" }}></div>
-  <div style={{ width: "28px", height: "3px", background: "black", borderRadius: "4px" }}></div>
-  <div style={{ width: "28px", height: "3px", background: "black", borderRadius: "4px" }}></div>
-</button>
+          type="button"
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="mobile-hamburger lg:hidden"
+          style={{
+            flexDirection: "column",
+            gap: "5px",
+            padding: "10px",
+            background: "transparent",
+            border: "none",
+            cursor: "pointer",
+            zIndex: 99999,
+          }}
+        >
+          <div
+            style={{
+              width: "28px",
+              height: "3px",
+              background: "black",
+              borderRadius: "4px",
+            }}
+          ></div>
+
+          <div
+            style={{
+              width: "28px",
+              height: "3px",
+              background: "black",
+              borderRadius: "4px",
+            }}
+          ></div>
+
+          <div
+            style={{
+              width: "28px",
+              height: "3px",
+              background: "black",
+              borderRadius: "4px",
+            }}
+          ></div>
+        </button>
 
         {/* MOBILE MENU */}
         {menuOpen && (
@@ -202,10 +225,7 @@ export default function Navbar() {
             "
           >
             <div className="flex flex-col p-4 text-lg font-bold">
-              <a
-                href="/"
-                className="py-3 border-b"
-              >
+              <a href="/" className="py-3 border-b">
                 Home
               </a>
 

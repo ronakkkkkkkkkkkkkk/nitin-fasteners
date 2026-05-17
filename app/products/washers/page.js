@@ -22,38 +22,51 @@ export default function WashersPage() {
 
       {/* PARALLAX */}
       <div
-  className="absolute inset-0 opacity-10"
-  style={{
-    backgroundImage: "url('/washers.webp')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    transform: `translateY(${offset * 0.2}px)`,
-    minHeight: "100%",
-  }}
-></div>
+        className="
+          absolute inset-0 opacity-10
+          bg-cover bg-center bg-no-repeat
+          md:bg-cover
+          bg-[length:220%]
+          sm:bg-[length:170%]
+        "
+        style={{
+          backgroundImage: "url('/washers.webp')",
+          transform: `translateY(${offset * 0.2}px)`,
+          minHeight: "100%",
+        }}
+      ></div>
+
       {/* CONTENT */}
       <div
-  className="
-    relative z-10
-    flex flex-col
-    items-center
-    justify-start md:justify-center
-    min-h-[100svh]
-    px-4 md:px-2
-    pt-24 md:pt-32
-    pb-24
-  "
->
+        className="
+          relative z-10
+          flex flex-col
+          items-center
+          justify-start md:justify-center
+          min-h-[100svh]
+          px-4 md:px-2
+
+          pt-4
+          md:pt-10
+          lg:pt-8
+
+          pb-2
+        "
+      >
 
         {/* TITLE */}
         <h1
           className="
             text-white
-            text-[38px] sm:text-[50px] md:text-[60px]
+            text-[38px]
+            sm:text-[50px]
+            md:text-[54px]
+            lg:text-[60px]
+
             font-bold
+
             mb-8 md:mb-10
-            md:-mt-15
+
             text-center
           "
         >
@@ -61,7 +74,7 @@ export default function WashersPage() {
         </h1>
 
         {/* LINE */}
-        <div className="relative -mt-4 md:-mt-8 mb-8 md:mb-10">
+        <div className="relative -mt-4 md:-mt-10 mb-8 md:mb-10">
 
           <div className="w-28 md:w-40 h-[3px] bg-white mx-auto rounded-full"></div>
 
@@ -71,7 +84,9 @@ export default function WashersPage() {
               -translate-x-1/2
               w-28 md:w-40
               h-[3px]
-              bg-white blur-md opacity-60
+              bg-white
+              blur-md
+              opacity-60
             "
           ></div>
 
@@ -92,14 +107,25 @@ export default function WashersPage() {
           {/* CARD 1 */}
           <div
             className="
-              bg-white/90 backdrop-blur-sm
+              bg-white/90
+              backdrop-blur-sm
               rounded-3xl
               p-4
+
               shadow-[0_25px_50px_rgba(0,0,0,0.35)]
+
               transition duration-500
               hover:-translate-y-4 hover:scale-105
-              w-[300px]
-              h-[300px]
+
+              w-[240px]
+              h-[240px]
+
+              md:w-[250px]
+              md:h-[250px]
+
+              lg:w-[270px]
+              lg:h-[270px]
+
               flex items-center justify-center
             "
           >
@@ -107,9 +133,9 @@ export default function WashersPage() {
             <img
               src="/machine-washers.jpeg"
               className="
-                w-[92%]
-                h-[92%]
-                scale-y-150
+                w-[88%]
+                h-[88%]
+                scale-y-125
                 object-contain
                 rounded-2xl
               "
@@ -121,14 +147,25 @@ export default function WashersPage() {
           {/* CARD 2 */}
           <div
             className="
-              bg-white/90 backdrop-blur-sm
+              bg-white/90
+              backdrop-blur-sm
               rounded-3xl
               p-4
+
               shadow-[0_25px_50px_rgba(0,0,0,0.35)]
+
               transition duration-500
               hover:-translate-y-4 hover:scale-105
-              w-[300px]
-              h-[300px]
+
+              w-[240px]
+              h-[240px]
+
+              md:w-[250px]
+              md:h-[250px]
+
+              lg:w-[270px]
+              lg:h-[270px]
+
               flex items-center justify-center
             "
           >
@@ -136,9 +173,9 @@ export default function WashersPage() {
             <img
               src="/spring-steel-washers.jpeg"
               className="
-                w-[65%]
-                h-[65%]
-                scale-x-140
+                w-[72%]
+                h-[72%]
+                scale-x-125
                 object-contain
                 rounded-2xl
               "
@@ -153,11 +190,20 @@ export default function WashersPage() {
         <p
           className="
             text-white
-            text-[16px] sm:text-[18px] md:text-[22px]
+
+            text-[16px]
+            sm:text-[18px]
+            md:text-[21px]
+
             leading-relaxed
+
             mb-10 md:mb-12
-            max-w-[95%] md:max-w-[80%]
-            text-left md:text-justify
+
+            max-w-[95%]
+            md:max-w-[80%]
+
+            text-left
+            md:text-justify
           "
         >
           We supply high-quality industrial washers suitable for engineering,
@@ -178,13 +224,21 @@ export default function WashersPage() {
           <button
             className="
               bg-white text-blue-900
+
               px-8 md:px-14
               py-3 md:py-4
+
               text-base md:text-lg
+
               font-semibold
+
               rounded-lg
+
               shadow-md
-              hover:shadow-xl hover:scale-105
+
+              hover:shadow-xl
+              hover:scale-105
+
               transition
               text-center
             "
@@ -198,14 +252,14 @@ export default function WashersPage() {
 
       {/* BOTTOM CURVE */}
       <div
-  className="
-    relative z-10
-    h-20 md:h-28
-    bg-white
-    rounded-t-[30px] md:rounded-t-[40px]
-    mt-0
-  "
-></div>
+        className="
+          relative z-10
+          h-20 md:h-28
+          bg-white
+          rounded-t-[30px] md:rounded-t-[40px]
+          mt-0
+        "
+      ></div>
 
     </main>
   );

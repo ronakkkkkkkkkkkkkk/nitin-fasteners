@@ -22,12 +22,15 @@ export default function BoltsPage() {
 
       {/* PARALLAX */}
       <div
-        className="absolute inset-0 opacity-10"
+        className="
+          absolute inset-0 opacity-10
+          bg-cover bg-center bg-no-repeat
+          md:bg-cover
+          bg-[length:220%]
+          sm:bg-[length:170%]
+        "
         style={{
           backgroundImage: "url('/bolts.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
           transform: `translateY(${offset * 0.2}px)`,
           minHeight: "100%",
         }}
@@ -42,8 +45,12 @@ export default function BoltsPage() {
           justify-start md:justify-center
           min-h-[100svh]
           px-4 md:px-2
-          pt-20 md:pt-28
-          pb-24
+
+          pt-4
+          md:pt-10
+          lg:pt-8
+
+          pb-2
         "
       >
 
@@ -51,18 +58,23 @@ export default function BoltsPage() {
         <h1
           className="
             text-white
-            text-[38px] sm:text-[50px] md:text-[60px]
+            text-[38px]
+            sm:text-[50px]
+            md:text-[54px]
+            lg:text-[60px]
+
             font-bold
+
             mb-8 md:mb-10
-md:-mt-15
-text-center
+
+            text-center
           "
         >
           BOLTS
         </h1>
 
         {/* LINE */}
-        <div className="relative -mt-4 md:-mt-8 mb-8 md:mb-10">
+        <div className="relative -mt-4 md:-mt-10 mb-8 md:mb-10">
 
           <div className="w-28 md:w-40 h-[3px] bg-white mx-auto rounded-full"></div>
 
@@ -98,11 +110,21 @@ text-center
               bg-white/90 backdrop-blur-sm
               rounded-3xl
               p-4
+
               shadow-[0_25px_50px_rgba(0,0,0,0.35)]
+
               transition duration-500
               hover:-translate-y-4 hover:scale-105
-              w-[300px]
-              h-[300px]
+
+              w-[240px]
+h-[240px]
+
+md:w-[250px]
+md:h-[250px]
+
+lg:w-[270px]
+lg:h-[270px]
+
               flex items-center justify-center
             "
           >
@@ -127,11 +149,21 @@ text-center
               bg-white/90 backdrop-blur-sm
               rounded-3xl
               p-4
+
               shadow-[0_25px_50px_rgba(0,0,0,0.35)]
+
               transition duration-500
               hover:-translate-y-4 hover:scale-105
-              w-[300px]
-              h-[300px]
+
+             w-[240px]
+h-[240px]
+
+md:w-[250px]
+md:h-[250px]
+
+lg:w-[270px]
+lg:h-[270px]
+
               flex items-center justify-center
             "
           >
@@ -141,7 +173,7 @@ text-center
               className="
                 w-[92%]
                 h-[92%]
-                object-cover
+                object-contain
                 rounded-2xl
               "
               alt="Allen Bolts"
@@ -155,11 +187,20 @@ text-center
         <p
           className="
             text-white
-            text-[16px] sm:text-[18px] md:text-[22px]
+
+            text-[16px]
+            sm:text-[18px]
+            md:text-[21px]
+
             leading-relaxed
+
             mb-10 md:mb-12
-            max-w-[95%] md:max-w-[80%]
-            text-left md:text-justify
+
+            max-w-[95%]
+            md:max-w-[80%]
+
+            text-left
+            md:text-justify
           "
         >
           We supply a comprehensive range of industrial bolts including{" "}
@@ -181,13 +222,21 @@ text-center
           <button
             className="
               bg-white text-blue-900
+
               px-8 md:px-14
               py-3 md:py-4
+
               text-base md:text-lg
+
               font-semibold
+
               rounded-lg
+
               shadow-md
-              hover:shadow-xl hover:scale-105
+
+              hover:shadow-xl
+              hover:scale-105
+
               transition
               text-center
             "

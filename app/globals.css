@@ -286,7 +286,6 @@ button {
 }
 
 .mobile-hamburger {
-  display: flex;
   flex-direction: column;
   gap: 6px;
   padding: 10px;
@@ -332,3 +331,15 @@ button {
     padding-bottom: 8px !important;
   }
 }
+
+@media (min-width: 1400px) {
+  #__next,
+  main,
+  header {
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
+  }
+}
+
+

@@ -27,7 +27,7 @@ export default function EnquiryPage() {
         bg-[#1e40af]
         overflow-hidden
         px-4 md:px-5
-        py-8 md:py-16
+        py-4 md:py-10
       "
     >
 
@@ -35,7 +35,13 @@ export default function EnquiryPage() {
       <img
         src="/bolts.webp"
         alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none"
+        className="
+          absolute inset-0
+          w-full h-full
+          object-cover
+          opacity-10
+          pointer-events-none
+        "
         style={{ transform: `translateY(${offset * 0.2}px)` }}
       />
 
@@ -43,7 +49,7 @@ export default function EnquiryPage() {
       <div
         className="
           relative z-10
-          max-w-7xl mx-auto
+          max-w-6xl mx-auto
           bg-white
           rounded-[28px] md:rounded-[45px]
           overflow-hidden
@@ -54,29 +60,40 @@ export default function EnquiryPage() {
       >
 
         {/* LEFT SIDE */}
-        <div className="p-6 sm:p-8 md:p-12 bg-[#f8f8f8]">
+        <div className="p-5 sm:p-7 md:p-9 bg-[#f8f8f8]">
 
           {/* TITLE */}
           <h1
             className="
-              text-[34px] sm:text-[44px] md:text-[56px]
-              font-bold text-blue-900
-              mb-8 md:mb-12
+              text-[30px]
+              sm:text-[40px]
+              md:text-[46px]
+
+              font-bold
+              text-blue-900
+
+              mb-6 md:mb-8
             "
           >
             Enquiry Details
           </h1>
 
           {/* CONTACT PERSON */}
-          <div className="flex gap-4 md:gap-6 mb-8 md:mb-10">
+          <div className="flex gap-4 md:gap-5 mb-8 md:mb-8">
 
             <div
               className="
-                w-12 h-12 md:w-16 md:h-16
+                w-12 h-12
+                md:w-14 md:h-14
+
                 rounded-full
+
                 bg-blue-900 text-white
+
                 flex items-center justify-center
-                text-lg md:text-2xl
+
+                text-lg md:text-xl
+
                 shrink-0
               "
             >
@@ -86,8 +103,11 @@ export default function EnquiryPage() {
             <div>
               <h2
                 className="
-                  text-[22px] md:text-[28px]
-                  font-bold text-slate-900
+                  text-[20px]
+                  md:text-[24px]
+
+                  font-bold
+                  text-slate-900
                 "
               >
                 Contact Person
@@ -95,7 +115,9 @@ export default function EnquiryPage() {
 
               <p
                 className="
-                  text-[16px] md:text-[20px]
+                  text-[15px]
+                  md:text-[17px]
+
                   text-slate-700
                   mt-1
                 "
@@ -106,18 +128,24 @@ export default function EnquiryPage() {
 
           </div>
 
-          <hr className="mb-8 md:mb-10 border-slate-300" />
+          <hr className="mb-8 md:mb-8 border-slate-300" />
 
           {/* ADDRESS */}
-          <div className="flex gap-4 md:gap-6 mb-8 md:mb-10">
+          <div className="flex gap-4 md:gap-5 mb-8 md:mb-8">
 
             <div
               className="
-                w-12 h-12 md:w-16 md:h-16
+                w-12 h-12
+                md:w-14 md:h-14
+
                 rounded-full
+
                 bg-blue-900 text-white
+
                 flex items-center justify-center
-                text-lg md:text-2xl
+
+                text-lg md:text-xl
+
                 shrink-0
               "
             >
@@ -127,8 +155,11 @@ export default function EnquiryPage() {
             <div>
               <h2
                 className="
-                  text-[22px] md:text-[28px]
-                  font-bold text-slate-900
+                  text-[20px]
+                  md:text-[24px]
+
+                  font-bold
+                  text-slate-900
                 "
               >
                 Address
@@ -136,7 +167,9 @@ export default function EnquiryPage() {
 
               <p
                 className="
-                  text-[15px] md:text-[18px]
+                  text-[15px]
+                  md:text-[17px]
+
                   leading-relaxed
                   text-slate-700
                   mt-2
@@ -149,18 +182,24 @@ export default function EnquiryPage() {
 
           </div>
 
-          <hr className="mb-8 md:mb-10 border-slate-300" />
+          <hr className="mb-8 md:mb-8 border-slate-300" />
 
           {/* LANDLINE */}
-          <div className="flex gap-4 md:gap-6 mb-8 md:mb-10">
+          <div className="flex gap-4 md:gap-5 mb-8 md:mb-8">
 
             <div
               className="
-                w-12 h-12 md:w-16 md:h-16
+                w-12 h-12
+                md:w-14 md:h-14
+
                 rounded-full
+
                 bg-blue-900 text-white
+
                 flex items-center justify-center
-                text-lg md:text-2xl
+
+                text-lg md:text-xl
+
                 shrink-0
               "
             >
@@ -170,8 +209,11 @@ export default function EnquiryPage() {
             <div>
               <h2
                 className="
-                  text-[22px] md:text-[28px]
-                  font-bold text-slate-900
+                  text-[20px]
+                  md:text-[24px]
+
+                  font-bold
+                  text-slate-900
                 "
               >
                 Landline
@@ -180,9 +222,12 @@ export default function EnquiryPage() {
               <a
                 href="tel:08041324035"
                 className="
-                  text-[16px] md:text-[20px]
+                  text-[15px]
+                  md:text-[17px]
+
                   text-slate-700
                   mt-1 block
+
                   hover:text-blue-700
                   transition
                 "
@@ -193,18 +238,24 @@ export default function EnquiryPage() {
 
           </div>
 
-          <hr className="mb-8 md:mb-10 border-slate-300" />
+          <hr className="mb-8 md:mb-8 border-slate-300" />
 
           {/* MOBILE */}
-          <div className="flex gap-4 md:gap-6 mb-8 md:mb-10">
+          <div className="flex gap-4 md:gap-5 mb-8 md:mb-8">
 
             <div
               className="
-                w-12 h-12 md:w-16 md:h-16
+                w-12 h-12
+                md:w-14 md:h-14
+
                 rounded-full
+
                 bg-blue-900 text-white
+
                 flex items-center justify-center
-                text-lg md:text-2xl
+
+                text-lg md:text-xl
+
                 shrink-0
               "
             >
@@ -214,8 +265,11 @@ export default function EnquiryPage() {
             <div>
               <h2
                 className="
-                  text-[22px] md:text-[28px]
-                  font-bold text-slate-900
+                  text-[20px]
+                  md:text-[24px]
+
+                  font-bold
+                  text-slate-900
                 "
               >
                 Phone Number
@@ -224,13 +278,16 @@ export default function EnquiryPage() {
               <a
                 href="tel:+919341214576"
                 className="
-                  text-blue-700 font-bold
-                  text-[16px] md:text-[20px]
+                  text-blue-700
+                  font-bold
+
+                  text-[15px]
+                  md:text-[17px]
+
                   hover:underline
                   cursor-pointer
                   transition
                 "
-                title="Click to call"
               >
                 +91 9341214576
               </a>
@@ -238,18 +295,25 @@ export default function EnquiryPage() {
 
           </div>
 
-          <hr className="mb-8 md:mb-10 border-slate-300" />
+          <hr className="mb-8 md:mb-8 border-slate-300" />
 
           {/* GST */}
-          <div className="flex gap-4 md:gap-6 mb-8 md:mb-10">
+          <div className="flex gap-4 md:gap-5 mb-8 md:mb-8">
 
             <div
               className="
-                w-12 h-12 md:w-16 md:h-16
+                w-12 h-12
+                md:w-14 md:h-14
+
                 rounded-full
+
                 bg-blue-900 text-white
+
                 flex items-center justify-center
-                text-[16px] md:text-[22px]
+
+                text-[14px]
+                md:text-[18px]
+
                 font-bold
                 shrink-0
               "
@@ -260,8 +324,11 @@ export default function EnquiryPage() {
             <div>
               <h2
                 className="
-                  text-[22px] md:text-[28px]
-                  font-bold text-slate-900
+                  text-[20px]
+                  md:text-[24px]
+
+                  font-bold
+                  text-slate-900
                 "
               >
                 GSTIN
@@ -269,7 +336,9 @@ export default function EnquiryPage() {
 
               <p
                 className="
-                  text-[16px] md:text-[20px]
+                  text-[15px]
+                  md:text-[17px]
+
                   text-slate-700
                   mt-1
                 "
@@ -280,18 +349,24 @@ export default function EnquiryPage() {
 
           </div>
 
-          <hr className="mb-8 md:mb-10 border-slate-300" />
+          <hr className="mb-8 md:mb-8 border-slate-300" />
 
           {/* WEBSITE */}
-          <div className="flex gap-4 md:gap-6">
+          <div className="flex gap-4 md:gap-5">
 
             <div
               className="
-                w-12 h-12 md:w-16 md:h-16
+                w-12 h-12
+                md:w-14 md:h-14
+
                 rounded-full
+
                 bg-blue-900 text-white
+
                 flex items-center justify-center
-                text-lg md:text-2xl
+
+                text-lg md:text-xl
+
                 shrink-0
               "
             >
@@ -301,8 +376,11 @@ export default function EnquiryPage() {
             <div>
               <h2
                 className="
-                  text-[22px] md:text-[28px]
-                  font-bold text-slate-900
+                  text-[20px]
+                  md:text-[24px]
+
+                  font-bold
+                  text-slate-900
                 "
               >
                 Web Address
@@ -312,7 +390,9 @@ export default function EnquiryPage() {
                 href="https://www.nitinfasteners.com"
                 target="_blank"
                 className="
-                  text-[16px] md:text-[20px]
+                  text-[15px]
+                  md:text-[17px]
+
                   text-blue-700
                   hover:underline
                   break-all
@@ -327,14 +407,19 @@ export default function EnquiryPage() {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="p-6 sm:p-8 md:p-12 bg-white">
+        <div className="p-5 sm:p-7 md:p-9 bg-white">
 
           {/* TITLE */}
           <h1
             className="
-              text-[32px] sm:text-[42px] md:text-[54px]
-              font-bold text-blue-900
-              mb-8 md:mb-12
+              text-[28px]
+              sm:text-[38px]
+              md:text-[44px]
+
+              font-bold
+              text-blue-900
+
+              mb-6 md:mb-8
             "
           >
             Send Us An Enquiry
@@ -344,10 +429,9 @@ export default function EnquiryPage() {
           <form
             action="https://formsubmit.co/nitinfasteners@rediffmail.com"
             method="POST"
-            className="space-y-6 md:space-y-8"
+            className="space-y-5 md:space-y-6"
           >
 
-            {/* HIDDEN */}
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_next" value="http://localhost:3000" />
 
@@ -357,9 +441,14 @@ export default function EnquiryPage() {
               <label
                 className="
                   block
-                  text-[18px] md:text-[22px]
+
+                  text-[16px]
+                  md:text-[19px]
+
                   font-bold
-                  mb-3 md:mb-4
+
+                  mb-3
+
                   text-slate-900
                 "
               >
@@ -373,13 +462,22 @@ export default function EnquiryPage() {
                 placeholder="Enter your Company Name"
                 className="
                   w-full
+
                   border border-slate-300
+
                   rounded-[14px] md:rounded-[18px]
+
                   px-4 md:px-6
-                  py-4 md:py-5
-                  text-[16px] md:text-[20px]
+
+                  py-3 md:py-4
+
+                  text-[15px]
+                  md:text-[17px]
+
                   outline-none
+
                   focus:border-blue-700
+
                   transition
                 "
               />
@@ -392,9 +490,14 @@ export default function EnquiryPage() {
               <label
                 className="
                   block
-                  text-[18px] md:text-[22px]
+
+                  text-[16px]
+                  md:text-[19px]
+
                   font-bold
-                  mb-3 md:mb-4
+
+                  mb-3
+
                   text-slate-900
                 "
               >
@@ -408,13 +511,22 @@ export default function EnquiryPage() {
                 placeholder="Enter Your Name"
                 className="
                   w-full
+
                   border border-slate-300
+
                   rounded-[14px] md:rounded-[18px]
+
                   px-4 md:px-6
-                  py-4 md:py-5
-                  text-[16px] md:text-[20px]
+
+                  py-3 md:py-4
+
+                  text-[15px]
+                  md:text-[17px]
+
                   outline-none
+
                   focus:border-blue-700
+
                   transition
                 "
               />
@@ -427,9 +539,14 @@ export default function EnquiryPage() {
               <label
                 className="
                   block
-                  text-[18px] md:text-[22px]
+
+                  text-[16px]
+                  md:text-[19px]
+
                   font-bold
-                  mb-3 md:mb-4
+
+                  mb-3
+
                   text-slate-900
                 "
               >
@@ -443,13 +560,22 @@ export default function EnquiryPage() {
                 placeholder="Enter Email"
                 className="
                   w-full
+
                   border border-slate-300
+
                   rounded-[14px] md:rounded-[18px]
+
                   px-4 md:px-6
-                  py-4 md:py-5
-                  text-[16px] md:text-[20px]
+
+                  py-3 md:py-4
+
+                  text-[15px]
+                  md:text-[17px]
+
                   outline-none
+
                   focus:border-blue-700
+
                   transition
                 "
               />
@@ -462,9 +588,14 @@ export default function EnquiryPage() {
               <label
                 className="
                   block
-                  text-[18px] md:text-[22px]
+
+                  text-[16px]
+                  md:text-[19px]
+
                   font-bold
-                  mb-3 md:mb-4
+
+                  mb-3
+
                   text-slate-900
                 "
               >
@@ -478,13 +609,22 @@ export default function EnquiryPage() {
                 placeholder="Enter Mobile Number"
                 className="
                   w-full
+
                   border border-slate-300
+
                   rounded-[14px] md:rounded-[18px]
+
                   px-4 md:px-6
-                  py-4 md:py-5
-                  text-[16px] md:text-[20px]
+
+                  py-3 md:py-4
+
+                  text-[15px]
+                  md:text-[17px]
+
                   outline-none
+
                   focus:border-blue-700
+
                   transition
                 "
               />
@@ -497,9 +637,14 @@ export default function EnquiryPage() {
               <label
                 className="
                   block
-                  text-[18px] md:text-[22px]
+
+                  text-[16px]
+                  md:text-[19px]
+
                   font-bold
-                  mb-3 md:mb-4
+
+                  mb-3
+
                   text-slate-900
                 "
               >
@@ -513,14 +658,23 @@ export default function EnquiryPage() {
                 placeholder="Enter Your Requirement of the product"
                 className="
                   w-full
+
                   border border-slate-300
+
                   rounded-[14px] md:rounded-[18px]
+
                   px-4 md:px-6
-                  py-4 md:py-5
-                  text-[16px] md:text-[20px]
+
+                  py-3 md:py-4
+
+                  text-[15px]
+                  md:text-[17px]
+
                   outline-none
                   resize-none
+
                   focus:border-blue-700
+
                   transition
                 "
               ></textarea>
@@ -533,14 +687,24 @@ export default function EnquiryPage() {
               <button
                 type="submit"
                 className="
-                  bg-blue-900 text-white
-                  px-8 md:px-10
+                  bg-blue-900
+                  text-white
+
+                  px-7 md:px-8
+
                   py-3 md:py-4
+
                   rounded-[12px] md:rounded-[14px]
-                  text-[16px] md:text-[20px]
+
+                  text-[15px]
+                  md:text-[17px]
+
                   font-semibold
+
                   hover:bg-red-600
+
                   transition duration-300
+
                   shadow-lg
                 "
               >
@@ -550,13 +714,22 @@ export default function EnquiryPage() {
               <button
                 type="reset"
                 className="
-                  bg-slate-300 text-slate-900
-                  px-8 md:px-10
+                  bg-slate-300
+                  text-slate-900
+
+                  px-7 md:px-8
+
                   py-3 md:py-4
+
                   rounded-[12px] md:rounded-[14px]
-                  text-[16px] md:text-[20px]
+
+                  text-[15px]
+                  md:text-[17px]
+
                   font-semibold
+
                   hover:bg-slate-400
+
                   transition duration-300
                 "
               >
@@ -570,6 +743,7 @@ export default function EnquiryPage() {
         </div>
 
       </div>
+
     </main>
   );
 }

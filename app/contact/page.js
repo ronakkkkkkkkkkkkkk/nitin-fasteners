@@ -34,10 +34,9 @@ export default function ContactPage() {
   return (
     <main className="relative min-h-screen overflow-hidden">
 
-      {/* FULL PAGE BACKGROUND */}
+      {/* BACKGROUND */}
       <div className="absolute inset-0 z-0 overflow-hidden">
 
-        {/* BASE GRADIENT */}
         <div
           className="absolute inset-0 animate-gradient"
           style={{
@@ -55,7 +54,6 @@ export default function ContactPage() {
           }}
         />
 
-        {/* BOLTS IMAGE */}
         <img
           src="/bolts.webp"
           alt=""
@@ -63,40 +61,38 @@ export default function ContactPage() {
             absolute inset-0
             w-full h-full
             object-cover
-            opacity-[0.09]
+            opacity-[0.08]
             mix-blend-overlay
           "
           style={{
-            transform: `translateY(${offset * 0.12}px) scale(1.08)`,
+            transform: `translateY(${offset * 0.1}px) scale(1.03)`,
           }}
         />
 
-        {/* BLUE LIGHT */}
         <div
           className="
             absolute
             top-[-15%]
             left-[-10%]
-            w-[900px]
-            h-[900px]
+            w-[700px]
+            h-[700px]
             rounded-full
             bg-blue-500/20
-            blur-[140px]
+            blur-[120px]
             animate-floatBlue
           "
         />
 
-        {/* RED LIGHT */}
         <div
           className="
             absolute
             bottom-[-15%]
             right-[-10%]
-            w-[900px]
-            h-[900px]
+            w-[700px]
+            h-[700px]
             rounded-full
             bg-red-500/20
-            blur-[140px]
+            blur-[120px]
             animate-floatRed
           "
         />
@@ -104,28 +100,70 @@ export default function ContactPage() {
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-10 px-4 md:px-6 py-14 md:py-20">
+      <div
+        className="
+          relative z-10
+
+          px-3 md:px-5 xl:px-8
+
+          pt-10 md:pt-12
+          pb-14 md:pb-16
+        "
+      >
 
         {/* HEADING */}
-        <div className="text-center mb-14 md:mb-20">
+        <div className="text-center mb-10 md:mb-12">
 
-          <h1 className="text-white text-[46px] md:text-[72px] font-extrabold tracking-wide leading-tight">
+          <h1
+            className="
+              text-white
+              text-[38px]
+              md:text-[58px]
+              xl:text-[66px]
+              font-extrabold
+              tracking-wide
+              leading-tight
+            "
+          >
             CONTACT US
           </h1>
 
-          <p className="mt-5 text-slate-300 text-[17px] md:text-[24px] italic px-4">
+          <p
+            className="
+              mt-4
+              text-slate-300
+              text-[15px]
+              md:text-[19px]
+              xl:text-[21px]
+              italic
+              px-4
+            "
+          >
             Reach out for enquiries, quotations & industrial fastener requirements.
           </p>
 
-          {/* DIVIDER */}
-          <div className="flex justify-center mt-8">
-            <div className="w-[160px] md:w-[220px] h-[2px] bg-gradient-to-r from-transparent via-white/70 to-transparent"></div>
+          <div className="flex justify-center mt-6">
+            <div className="w-[130px] xl:w-[180px] h-[2px] bg-gradient-to-r from-transparent via-white/70 to-transparent"></div>
           </div>
 
         </div>
 
         {/* CONTACT CARDS */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 mb-20">
+        <div
+          className="
+            max-w-[1450px]
+            mx-auto
+
+            grid
+            grid-cols-1
+            md:grid-cols-2
+            xl:grid-cols-3
+
+            gap-5 xl:gap-6
+
+            mb-14
+          "
+        >
 
           {/* MOBILE */}
           <a
@@ -134,38 +172,57 @@ export default function ContactPage() {
               group
               bg-black/20
               border border-white/10
-              rounded-[28px]
-              p-6 md:p-8
+
+              rounded-[26px]
+
+              p-5 xl:p-6
+
               backdrop-blur-md
+
               transition-all duration-300
+
               hover:scale-[1.02]
               hover:border-red-400/50
             "
           >
-            <div className="flex items-center gap-4 md:gap-5 mb-5">
+            <div className="flex items-center gap-4 mb-5">
 
               <div
                 className="
-                  w-14 h-14 md:w-16 md:h-16
+                  w-14 h-14
                   rounded-2xl
                   bg-red-500/20
                   flex items-center justify-center
                 "
               >
-                <FaMobileAlt className="text-red-400 text-2xl md:text-3xl" />
+                <FaMobileAlt className="text-red-400 text-2xl" />
               </div>
 
-              <h2 className="text-white text-2xl md:text-3xl font-bold">
+              <h2
+                className="
+                  text-white
+                  text-[26px]
+                  xl:text-[32px]
+                  font-bold
+                "
+              >
                 Mobile
               </h2>
 
             </div>
 
-            <p className="text-slate-200 text-lg md:text-2xl font-semibold">
+            <p
+              className="
+                text-slate-200
+                text-[22px]
+                xl:text-[26px]
+                font-semibold
+              "
+            >
               +91 9341214576
             </p>
 
-            <p className="mt-3 text-slate-400 text-sm md:text-base">
+            <p className="mt-3 text-slate-400 text-[15px]">
               Click to call instantly
             </p>
           </a>
@@ -177,38 +234,57 @@ export default function ContactPage() {
               group
               bg-black/20
               border border-white/10
-              rounded-[28px]
-              p-6 md:p-8
+
+              rounded-[26px]
+
+              p-5 xl:p-6
+
               backdrop-blur-md
+
               transition-all duration-300
+
               hover:scale-[1.02]
               hover:border-blue-400/50
             "
           >
-            <div className="flex items-center gap-4 md:gap-5 mb-5">
+            <div className="flex items-center gap-4 mb-5">
 
               <div
                 className="
-                  w-14 h-14 md:w-16 md:h-16
+                  w-14 h-14
                   rounded-2xl
                   bg-blue-500/20
                   flex items-center justify-center
                 "
               >
-                <FaPhoneAlt className="text-blue-400 text-xl md:text-2xl" />
+                <FaPhoneAlt className="text-blue-400 text-xl" />
               </div>
 
-              <h2 className="text-white text-2xl md:text-3xl font-bold">
+              <h2
+                className="
+                  text-white
+                  text-[26px]
+                  xl:text-[32px]
+                  font-bold
+                "
+              >
                 Landline
               </h2>
 
             </div>
 
-            <p className="text-slate-200 text-lg md:text-2xl font-semibold">
+            <p
+              className="
+                text-slate-200
+                text-[22px]
+                xl:text-[26px]
+                font-semibold
+              "
+            >
               080-41324035
             </p>
 
-            <p className="mt-3 text-slate-400 text-sm md:text-base">
+            <p className="mt-3 text-slate-400 text-[15px]">
               Available during business hours
             </p>
           </a>
@@ -220,38 +296,58 @@ export default function ContactPage() {
               group
               bg-black/20
               border border-white/10
-              rounded-[28px]
-              p-6 md:p-8
+
+              rounded-[26px]
+
+              p-5 xl:p-6
+
               backdrop-blur-md
+
               transition-all duration-300
+
               hover:scale-[1.02]
               hover:border-red-400/50
             "
           >
-            <div className="flex items-center gap-4 md:gap-5 mb-5">
+            <div className="flex items-center gap-4 mb-5">
 
               <div
                 className="
-                  w-14 h-14 md:w-16 md:h-16
+                  w-14 h-14
                   rounded-2xl
                   bg-red-500/20
                   flex items-center justify-center
                 "
               >
-                <FaEnvelope className="text-red-400 text-xl md:text-2xl" />
+                <FaEnvelope className="text-red-400 text-xl" />
               </div>
 
-              <h2 className="text-white text-2xl md:text-3xl font-bold">
+              <h2
+                className="
+                  text-white
+                  text-[26px]
+                  xl:text-[32px]
+                  font-bold
+                "
+              >
                 Email
               </h2>
 
             </div>
 
-            <p className="text-slate-200 text-[15px] md:text-xl font-semibold break-all">
+            <p
+              className="
+                text-slate-200
+                text-[15px]
+                xl:text-[18px]
+                font-semibold
+                break-all
+              "
+            >
               nitinfasteners@rediffmail.com
             </p>
 
-            <p className="mt-3 text-slate-400 text-sm md:text-base">
+            <p className="mt-3 text-slate-400 text-[15px]">
               Send us your requirements
             </p>
           </a>
@@ -265,38 +361,57 @@ export default function ContactPage() {
               group
               bg-black/20
               border border-white/10
-              rounded-[28px]
-              p-6 md:p-8
+
+              rounded-[26px]
+
+              p-5 xl:p-6
+
               backdrop-blur-md
+
               transition-all duration-300
+
               hover:scale-[1.02]
               hover:border-green-400/50
             "
           >
-            <div className="flex items-center gap-4 md:gap-5 mb-5">
+            <div className="flex items-center gap-4 mb-5">
 
               <div
                 className="
-                  w-14 h-14 md:w-16 md:h-16
+                  w-14 h-14
                   rounded-2xl
                   bg-green-500/20
                   flex items-center justify-center
                 "
               >
-                <span className="text-[28px] md:text-[34px]">💬</span>
+                <span className="text-[28px]">💬</span>
               </div>
 
-              <h2 className="text-white text-2xl md:text-3xl font-bold">
+              <h2
+                className="
+                  text-white
+                  text-[26px]
+                  xl:text-[32px]
+                  font-bold
+                "
+              >
                 WhatsApp Us
               </h2>
 
             </div>
 
-            <p className="text-slate-200 text-lg md:text-2xl font-semibold">
+            <p
+              className="
+                text-slate-200
+                text-[22px]
+                xl:text-[26px]
+                font-semibold
+              "
+            >
               +91 9341214576
             </p>
 
-            <p className="mt-3 text-slate-400 text-sm md:text-base">
+            <p className="mt-3 text-slate-400 text-[15px]">
               Fastest way to contact us
             </p>
           </a>
@@ -310,34 +425,54 @@ export default function ContactPage() {
               group
               bg-black/20
               border border-white/10
-              rounded-[28px]
-              p-6 md:p-8
+
+              rounded-[26px]
+
+              p-5 xl:p-6
+
               backdrop-blur-md
+
               transition-all duration-300
+
               hover:scale-[1.02]
               hover:border-blue-400/50
             "
           >
-            <div className="flex items-center gap-4 md:gap-5 mb-5">
+            <div className="flex items-center gap-4 mb-5">
 
               <div
                 className="
-                  w-14 h-14 md:w-16 md:h-16
+                  w-14 h-14
                   rounded-2xl
                   bg-blue-500/20
                   flex items-center justify-center
                 "
               >
-                <FaGlobe className="text-blue-400 text-xl md:text-2xl" />
+                <FaGlobe className="text-blue-400 text-xl" />
               </div>
 
-              <h2 className="text-white text-2xl md:text-3xl font-bold">
+              <h2
+                className="
+                  text-white
+                  text-[26px]
+                  xl:text-[32px]
+                  font-bold
+                "
+              >
                 Website
               </h2>
 
             </div>
 
-            <p className="text-slate-200 text-[15px] md:text-xl font-semibold break-all">
+            <p
+              className="
+                text-slate-200
+                text-[15px]
+                xl:text-[18px]
+                font-semibold
+                break-all
+              "
+            >
               www.nitinfasteners.com
             </p>
           </a>
@@ -347,82 +482,131 @@ export default function ContactPage() {
             className="
               bg-black/20
               border border-white/10
-              rounded-[28px]
-              p-6 md:p-8
+
+              rounded-[26px]
+
+              p-5 xl:p-6
+
               backdrop-blur-md
             "
           >
-            <div className="flex items-center gap-4 md:gap-5 mb-5">
+            <div className="flex items-center gap-4 mb-5">
 
               <div
                 className="
-                  w-14 h-14 md:w-16 md:h-16
+                  w-14 h-14
                   rounded-2xl
                   bg-red-500/20
                   flex items-center justify-center
                 "
               >
-                <FaMapMarkerAlt className="text-red-400 text-xl md:text-2xl" />
+                <FaMapMarkerAlt className="text-red-400 text-xl" />
               </div>
 
-              <h2 className="text-white text-2xl md:text-3xl font-bold">
+              <h2
+                className="
+                  text-white
+                  text-[26px]
+                  xl:text-[32px]
+                  font-bold
+                "
+              >
                 Address
               </h2>
 
             </div>
 
-            <p className="text-slate-200 text-[15px] md:text-[18px] leading-relaxed">
-              SHOP NO.8, FIRST FLOOR, NO.20/6, SALAM COMPLEX,
-              M.R.R.LANE, S.J.P. ROAD CROSS,
+            <p
+              className="
+                text-slate-200
+                text-[15px]
+                xl:text-[17px]
+                leading-relaxed
+              "
+            >
+              SHOP NO.8, FIRST FLOOR, NO.20/6,
+              SALAM COMPLEX, M.R.R.LANE,
+              S.J.P. ROAD CROSS,
               BANGALORE - 560002.
             </p>
           </div>
 
         </div>
 
-        {/* LOCATION HEADING */}
-        <div className="text-center mb-10">
+        {/* LOCATION */}
+        <div className="text-center mb-8">
 
-          <h2 className="text-white text-[38px] md:text-[58px] font-bold">
+          <h2
+            className="
+              text-white
+              text-[34px]
+              md:text-[46px]
+              xl:text-[54px]
+              font-bold
+            "
+          >
             OUR LOCATION
           </h2>
 
-          <div className="flex justify-center mt-5">
-            <div className="w-[140px] md:w-[180px] h-[2px] bg-gradient-to-r from-transparent via-white/70 to-transparent"></div>
+          <div className="flex justify-center mt-4">
+            <div className="w-[120px] xl:w-[170px] h-[2px] bg-gradient-to-r from-transparent via-white/70 to-transparent"></div>
           </div>
 
         </div>
 
-        {/* MAP SECTION */}
+        {/* MAP */}
         <div
           className="
-            max-w-7xl mx-auto
+            max-w-[1500px]
+            mx-auto
+
             bg-black/20
             border border-white/10
-            rounded-[35px]
+
+            rounded-[30px]
+
             overflow-hidden
             backdrop-blur-md
+
             shadow-[0_20px_60px_rgba(0,0,0,0.45)]
           "
         >
 
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.109088605558!2d77.57664117383511!3d12.96487078734985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e2792f5f47%3A0x626de5e92fb24e35!2sNitin%20Fasteners!5e0!3m2!1sen!2sin!4v1778945411284!5m2!1sen!2sin"
-  width="100%"
-  height={isMobile ? "350" : "720"}
-  style={{ border: "0" }}
-  allowFullScreen
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.109088605558!2d77.57664117383511!3d12.96487078734985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e2792f5f47%3A0x626de5e92fb24e35!2sNitin%20Fasteners!5e0!3m2!1sen!2sin!4v1778945411284!5m2!1sen!2sin"
+            width="100%"
+            height={isMobile ? "350" : "540"}
+            style={{ border: "0" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
 
-          <div className="p-6 md:p-12 text-center">
+          <div className="p-5 md:p-8 text-center">
 
-            <h3 className="text-white text-[28px] md:text-[42px] font-bold mb-5">
+            <h3
+              className="
+                text-white
+                text-[24px]
+                md:text-[34px]
+                xl:text-[38px]
+                font-bold
+                mb-4
+              "
+            >
               Visit Nitin Fasteners
             </h3>
 
-            <p className="text-slate-300 text-[16px] md:text-[22px] leading-relaxed mb-8 md:mb-10">
+            <p
+              className="
+                text-slate-300
+                text-[15px]
+                md:text-[18px]
+                xl:text-[20px]
+                leading-relaxed
+                mb-7
+              "
+            >
               Trusted industrial fastener suppliers serving customers
               across multiple industries with quality & reliability.
             </p>
@@ -433,14 +617,21 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="
                 inline-block
+
                 bg-red-600
                 hover:bg-red-700
+
                 text-white
-                text-[15px] md:text-[20px]
+                text-[14px]
+                md:text-[17px]
+
                 font-bold
-                px-6 md:px-10
-                py-4 md:py-5
+
+                px-6 md:px-8
+                py-3 md:py-4
+
                 rounded-2xl
+
                 transition-all duration-300
                 hover:scale-105
               "
