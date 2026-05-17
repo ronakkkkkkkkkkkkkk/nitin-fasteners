@@ -299,28 +299,37 @@ button {
   justify-content: center;
 }
 
+.mobile-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 4px;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  z-index: 99999;
+
+  flex-shrink: 0;
+}
+
 .mobile-hamburger div {
-  width: 32px;
-  height: 3px;
-  background: black;
-  border-radius: 4px;
-  display: block;
-}
+  width: 24px;
+  height: 2.5px;
 
-.mobile-menu-panel {
-  display: block;
-}
+  background: #000;
 
-@media (min-width: 1400px) {
-  .desktop-nav {
-    display: flex;
-  }
-  .mobile-hamburger {
-    display: none !important;
-  }
-  .mobile-menu-panel {
-    display: none !important;
-  }
+  border-radius: 999px;
+
+  transition: all 0.3s ease;
 }
 
 /* ================= MOBILE HERO GAP REDUCTION ================= */
